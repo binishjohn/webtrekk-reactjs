@@ -4,8 +4,8 @@ import bodyParser from "body-parser";
 
 const app = express();
 app.use(bodyParser.json());
-// const dbUrl = "mongodb://webtrekk:webtrekk@webtrekk-shard-00-00-rfqne.gcp.mongodb.net:27017,webtrekk-shard-00-01-rfqne.gcp.mongodb.net:27017,webtrekk-shard-00-02-rfqne.gcp.mongodb.net:27017/test?ssl=true&replicaSet=webtrekk-shard-0&authSource=admin&retryWrites=true";
-const dbUrl ="mongodb://localhost/webtrekk"
+const dbUrl = "mongodb://webtrekk:webtrekk@webtrekk-shard-00-00-rfqne.gcp.mongodb.net:27017,webtrekk-shard-00-01-rfqne.gcp.mongodb.net:27017,webtrekk-shard-00-02-rfqne.gcp.mongodb.net:27017/test?ssl=true&replicaSet=webtrekk-shard-0&authSource=admin&retryWrites=true";
+// const dbUrl ="mongodb://localhost/webtrekk"
 
 function validate(data) {
   let errors = {};
