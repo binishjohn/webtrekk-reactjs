@@ -5,8 +5,8 @@ class CustomerForm extends React.Component {
   state = {
     _id: this.props.customer ? this.props.customer._id : null,
     cover: this.props.customer ? this.props.customer.cover : "",
-    firstname: this.props.customer ? this.props.customer.firstname : "",
-    lastname: this.props.customer ? this.props.customer.lastname : "",
+    firstname: this.props.customer ? this.props.customer.name.firstname : "",
+    lastname: this.props.customer ? this.props.customer.name.lastname : "",
     gender: this.props.customer ? this.props.customer.gender : "female",
     birthday: this.props.customer ? this.props.customer.birthday : "",
     lifetimevalue: this.props.customer ? this.props.customer.lifetimevalue : "",
@@ -18,8 +18,8 @@ class CustomerForm extends React.Component {
     this.setState({
       _id: nextProps.customer._id,
       cover: nextProps.customer.cover,
-      firstname: nextProps.customer.firstname,
-      lastname: nextProps.customer.lastname,
+      firstname: nextProps.customer.name.firstname,
+      lastname: nextProps.customer.name.lastname,
       gender: nextProps.customer.gender,
       birthday: nextProps.customer.birthday,
       lifetimevalue: nextProps.customer.lifetimevalue

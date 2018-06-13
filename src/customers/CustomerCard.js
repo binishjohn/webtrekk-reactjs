@@ -8,7 +8,7 @@ export default function CustomerCard({ customer, deleteCustomer }) {
         <img src={customer.cover} alt="Customer Cover" />
       </div>
       <div className="content">
-        <div className="header"> {customer.firstname} {customer.lastname}</div>
+        <div className="header"> {customer.name.firstname} {customer.name.lastname}</div>
         <div className="meta">
           <i className={`icon  ${customer.gender}`} />
           <span className="info ProperCase">{customer.gender}</span>
